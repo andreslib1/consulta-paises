@@ -1,0 +1,13 @@
+<h2>Por Pais</h2>
+<hr>
+<div class="row">
+    <div class="col">
+       <shered-search-box (searchEvent)="searchByCountry($event)" placeholder="Buscar por pais" ></shered-search-box>
+    </div>
+</div>
+<div class="row">
+    <div class="col">
+        <hr>
+        <countries-table [countries] = "countries"></countries-table>
+    </div>
+</div>
